@@ -1,0 +1,82 @@
+package corejava;
+
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class Test   {
+	
+ 
+	
+	public static void main(String[] args) {
+
+		
+		 
+		String temp = "asdasd@asdasd";
+		for (int i =0; i<temp.length();i++) {
+			if (! Character.isLetter(temp.charAt(i))) {
+				System.out.println("  Invalid String");
+				break;
+			}
+		} 
+	}
+	
+	public static void mainww(String[] args) {
+		new HashMap<String, String>().forEach((v, f) ->System.out.println("ccccc: "+v.toString()));
+		Set<Entry<String, String>> set = new HashMap<String, String>().entrySet();
+	}
+	static int count = 0;
+	
+	/* 
+	
+		 BeanNameAware 
+		 BeanClassLoaderAware 
+		 BeanFactoryAware 
+		 
+		 BeanPostProcessors 
+		 
+		 InitializingBean 
+		 DisposableBean 
+		 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+* 
+* 
+* 
+* 
+* 
+* 
+	 * public static void main(String[] args) {
+ 
+		ArrayList<String> list = new ArrayList<>(Arrays.asList("a","x","c","d","e","t")) ;
+		
+		Set<Integer> t = list.stream().filter(d-> (d.hashCode() > 1)).map(x->x.hashCode()).collect(Collectors.toSet());
+		
+		list.forEach(d-> {
+	        
+			System.out.println(d);
+			count = count + 1;
+		}
+        );
+    	    	
+	System.out.println("ccccc: "+count);
+	}*/
+	
+}
+
+interface i2 {
+	
+	default void test(){}
+}
+interface i1 {
+	
+	default void test(){}
+}
+

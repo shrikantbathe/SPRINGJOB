@@ -1,0 +1,87 @@
+package corejava;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		//Working Strikes:
+		
+		System.out.println( ((int) (Math.ceil(11751.4/50.0))*50));
+		System.out.println( ((int) (Math.ceil(31800.4/100.0))*100));
+		
+		
+		
+		 List<String> list = new ArrayList<>();
+	        list.add("a"); 
+	    
+	        String [] arr = list.toArray(new String [list.size()]);
+		
+		  
+		String text = "abcdefghijklmasnopqrstduvwxysz";
+		
+		//Convert array t
+		
+		  List<String> list1 = Arrays.asList(text.split(""));
+		  
+		  Set<String> unique = new HashSet<>(list1);
+		  
+		  unique.forEach(d->{
+			  
+			int count= Collections.frequency(list1, d);
+			  
+			if (count > 1)
+				System.out.println(d +"->"+count);
+		  });
+		  
+		  
+		 
+		  
+		
+		
+		System.out.println("");
+		
+		
+	/*	
+		 List<String> list = new ArrayList<>();
+	        list.add("a");*/
+
+	
+	}
+	
+	/*public static void main(String[] args) {
+		Map<String,String> map = new HashMap<>();
+		map.put("1", "one");
+		map.put("2", "two");
+		map.put("3", "three");
+		map.put("4", "four");
+		System.out.println(": "+ map.entrySet());
+		for (Map.Entry<String,String> entry :map.entrySet()) {
+			System.out.println("- "+ entry.getKey()+"  : "+ entry.getValue());
+		}
+	}
+	*/
+
+	
+}
+
+class Hosting {
+
+    private int Id;
+    private String name;
+    private long websites;
+
+    public Hosting(int id, String name, long websites) {
+        Id = id;
+        this.name = name;
+        this.websites = websites;
+    }
+
+    //getters, setters and toString()
+}
