@@ -3,6 +3,7 @@ public class NumTest {
 
 	public static void main(String[] args) {
 
+String = "String added by SWATI BAthe";
 		int num = 12; 
 		int reversedNo = 0;
 		
